@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1598449806566-e70345f92b8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justif-content: center;
+  align-items: center;
+}
+.container {
+  width: 360px;
+  height: 700px;
+  margin: 8% auto;
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+h3 {
+  text-align: center;
+  margin-borrom: 40px;
+  color: #777;
+}
+.container form {
+  width: 280px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  transition: 0.5s;
+}
+.table{
+  position: absolute;
+  top: -25px;
+  left: 1050px;
+}
+
+
+form input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+::placeholder {
+  color: #777;
+}
+.btn-box {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+form button {
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+#Form2, #Form3 {
+  left: 450px;
+}
+.step-row {
+  width: 360px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+.step-col {
+  width: 120px;
+  text-align: center;
+  position: relative;
+}
+#progress {
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  transition: 0.5s;
+}
+#progress::after {
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #ffad06;
+}
+#Text1 {
+  color: #fff;
+}
+#Text2, #Text3 {
+  color: #333;
+  transition: 0.5s;
+}
